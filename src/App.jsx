@@ -10,7 +10,7 @@ function App() {
   return (
     <>
     <Navbar></Navbar>
-    <ItemListContainer bienvenida="¡Bienvenidos a Clickpass!"></ItemListContainer>
+    <ItemListContainer bienvenida="¡Bienvenidos a Clixpass!"></ItemListContainer>
     </>
   )
 }

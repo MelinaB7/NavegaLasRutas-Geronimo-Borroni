@@ -7,8 +7,8 @@ function App() {
 
   return (
     <>
-    <Navbar></Navbar>
-    <ItemListContainer bienvenida="¡Bienvenidos a Clixpass!"></ItemListContainer>
+    <Navbar/>
+    <ItemListContainer bienvenida="¡Bienvenidos a Clixpass!"/>
     </>
   )
 }

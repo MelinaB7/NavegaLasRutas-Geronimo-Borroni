@@ -1,55 +1,46 @@
-const eventos = [
-  {
-    id: 1,
-    nombre: "Concierto Sinfónica",
-    precio: 30000,
-    descripcion: "Banda Sinfónica de la Universidad Nacional de Córdoba.",
-    stock: 500,
-    category: "Futuros-shows",
-    img: "../public/conciertosinfonica.jpg",
-  },
+export const eventos = [
+
 
   {
-    id: 2,
-    nombre: "Show de Títeres",
+      nombre: "Show de Títeres",
     precio: 15000,
     descripcion:
       "Un espectáculo de títeres interactivo, apto para todo público.",
     stock: 100,
     category: "Ofertas",
-    img: "../public/titeres.jpg",
+    img: "https://i.postimg.cc/xCHHxKpV/titeres.jpg",
   },
 
   {
-    id: 3,
+
     nombre: "Obra de Teatro - El Viaje",
     precio: 22000,
     descripcion:
       "Una historia sobre la búsqueda interior a través de un viaje por Latinoamérica.",
     stock: 50,
     category: "Sorteos",
-    img: "../public/obradeteatro.jpg",
+    img: "https://i.postimg.cc/8zKhjkf9/obradeteatro.jpg",
   },
   {
-    id: 4,
+
     nombre: "Festival de Danza Contemporánea",
     precio: 18000,
     descripcion:
       "Coreografías de artistas locales e internacionales en un mismo escenario.",
     stock: 200,
     category: "Futuros-shows",
-    img: "../public/festivaldedanza.jpg",
+    img: "https://i.postimg.cc/bNP05BjC/festivaldedanza.jpg",
   },
 
   {
-    id: 5,
+
     nombre: "Cine al Aire Libre",
     precio: 10000,
     descripcion:
       "Proyección de clásicos del cine argentino en el parque Sarmiento.",
     stock: 2000,
     category: "Sorteos",
-    img: "../public/cinealairelibre.webp",
+    img: "https://i.postimg.cc/j206t8nj/cinealairelibre.webp",
   },
 
   {
@@ -59,7 +50,7 @@ const eventos = [
     descripcion: "Una noche de comedia con los mejores comediantes de Córdoba.",
     stock: 800,
     category: "Ofertas",
-    img: "../public/standup.webp",
+    img: "https://i.postimg.cc/DzS1sVqZ/standup.webp",
   },
 ];
 export const getEventos = () => {

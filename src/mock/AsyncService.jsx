@@ -44,7 +44,6 @@ export const eventos = [
   },
 
   {
-    id: 6,
     nombre: "Stand Up - Risas en la Noche",
     precio: 16000,
     descripcion: "Una noche de comedia con los mejores comediantes de Córdoba.",

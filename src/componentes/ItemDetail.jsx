@@ -1,12 +1,21 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import ItemCount from "./ItemCount";
+import Swal from "sweetalert2"
 
 const ItemDetail = ({ detalle }) => {
   const { addItem, cart } = useContext(CartContext);
   const onAdd = (cantidad) => {
     console.log(`Compraste ${cantidad} de productos`);
     addItem(detalle, cantidad);
+    Swal.fire({
+      position:'top-end',
+      icon:'success',
+      title:`Agregaste "${detalle.nombre}" al carrito`,
+      showCancelButton:false,
+      showConfirmButton:false,
+      timer:2000
+    })
   };
   console.log(cart, "carrito");
   return (

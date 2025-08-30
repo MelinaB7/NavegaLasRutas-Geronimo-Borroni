@@ -4,6 +4,7 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { db } from "../service/firebase";
 import { Link } from "react-router-dom";
 import { useLoader } from "../context/LoaderContext"; 
+import Swal from "sweetalert2";
 
 const Checkout = () => {
   const [buyer, setBuyer] = useState({});
@@ -19,11 +20,21 @@ const Checkout = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!buyer.name || !buyer.lastname || !buyer.address || !buyer.email) {
-      alert("Complete todos los campos");
+      Swal.fire({
+      icon: "warning",
+      title: "Campos incompletos",
+      text: "Complete todos los campos para continuar",
+      confirmButtonText: "Ok",
+    });
       return;
     }
     if (buyer.email !== validMail) {
-      alert("Los correos no coinciden");
+        Swal.fire({
+      icon: "error",
+      title: "Correos no coinciden",
+      text: "Por favor verifique que los correos sean iguales",
+      confirmButtonText: "Ok",
+    });
       return;
     }
     const order = {
